@@ -4,5 +4,4 @@ const asyncErrorHandler = (fun)=>{
         fun(req,res,next).catch(err => next(new customError(err.message)));
     }
 }
-
 module.exports = asyncErrorHandler;
